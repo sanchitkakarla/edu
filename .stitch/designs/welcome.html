@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EduManage - Academic Admin Portal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#000000",
+                    "tertiary-fixed-dim": "#c4c7c9",
+                    "surface-container-high": "#e8e8e8",
+                    "on-secondary-fixed-variant": "#38485d",
+                    "outline": "#76777d",
+                    "primary-container": "#131b2e",
+                    "tertiary-container": "#191c1e",
+                    "surface-tint": "#565e74",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c6c6cd",
+                    "on-secondary-fixed": "#0b1c30",
+                    "on-primary-container": "#7c839b",
+                    "on-error-container": "#93000a",
+                    "secondary-container": "#d0e1fb",
+                    "on-surface-variant": "#45464d",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-dim": "#dadada",
+                    "on-error": "#ffffff",
+                    "surface-container": "#eeeeee",
+                    "on-primary": "#ffffff",
+                    "background": "#f9f9f9",
+                    "surface-variant": "#e2e2e2",
+                    "secondary": "#505f76",
+                    "on-secondary-container": "#54647a",
+                    "inverse-surface": "#2f3131",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#b7c8e1",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "surface-container-low": "#f3f3f4",
+                    "surface": "#f9f9f9",
+                    "on-tertiary-fixed": "#191c1e",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-background": "#1a1c1c",
+                    "primary": "#000000",
+                    "surface-container-highest": "#e2e2e2",
+                    "primary-fixed-dim": "#bec6e0",
+                    "primary-fixed": "#dae2fd",
+                    "secondary-fixed": "#d3e4fe",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#1a1c1c",
+                    "error-container": "#ffdad6",
+                    "surface-bright": "#f9f9f9",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed": "#e0e3e5",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "inverse-primary": "#bec6e0",
+                    "on-tertiary-container": "#818486"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max-width": "1440px",
+                    "stack-md": "1rem",
+                    "margin-page": "2rem",
+                    "gutter": "1.5rem",
+                    "stack-sm": "0.5rem",
+                    "nav-width": "260px",
+                    "stack-lg": "2rem"
+            },
+            "fontFamily": {
+                    "h2": ["Inter"],
+                    "label-md": ["Inter"],
+                    "h3": ["Inter"],
+                    "h1": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "caption": ["Inter"]
+            },
+            "fontSize": {
+                    "h2": ["24px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                    "h3": ["20px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600"}],
+                    "h1": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "body-md": ["14px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen">
+<header class="fixed top-0 right-0 left-0 h-16 flex justify-between items-center px-8 w-full bg-surface border-b border-outline-variant z-50">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">school</span>
+<h1 class="font-h3 text-h3 font-semibold text-primary">EduManage Admin</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-all" href="#">University Portal</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-all" href="#">Support</a>
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded font-label-md text-label-md hover:opacity-90 transition-all">
+                Admin Login
+            </button>
+</nav>
+</header>
+<main class="pt-16">
+<section class="relative h-[819px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Modern University Campus" class="w-full h-full object-cover" data-alt="A wide-angle high-resolution shot of a modern university library with sleek glass architecture and wood accents. Soft morning sunlight streams through large floor-to-ceiling windows, illuminating organized bookshelves and minimalist study clusters. The environment is quiet and professional, using a color palette of deep navy blues, warm wood tones, and cool grey stone. The style is clean, contemporary, and institutional, conveying a sense of academic excellence and organized management." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaP61-LQqQEOxEchhZYlRl8BV_5HnaXjUNnaqb4ARDZJtH7t8H0r-vkfNXqgrlKwbvkuFyRUagdEbETqbWrzIrAh8A545DtqOdICVZk0UFHuPTitxg22ozfY3o4qa83cTd4en9lN-ChGj8lX8DBBUTHNhQyn4AONg-ixF8j6FNiRnFwvZ--UbzuNmtouYnOeSnYQ0COHHorV_NQ7Fq7qf6djkJoXQVxht0xDc-S8vWOtitMUjQ-ugSYHJ-vRIDA-4W4UzaxJ60MBmF"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/90 via-primary-container/40 to-transparent"></div>
+</div>
+<div class="container mx-auto px-8 relative z-10">
+<div class="max-w-2xl">
+<span class="inline-block px-3 py-1 bg-white/10 text-white rounded mb-6 font-label-md text-label-md border border-white/20">
+                        Academic Management System
+                    </span>
+<h2 class="font-h1 text-h1 text-on-primary mb-4 leading-tight">
+                        Empowering Institutional Success with EduManage
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-primary/80 mb-8 max-w-lg">
+                        Streamline your administrative workflows, curriculum planning, and student tracking with our high-performance academic management platform.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-white text-primary-container px-8 py-3 rounded font-label-md text-label-md font-bold hover:bg-surface-container transition-all flex items-center gap-2 shadow-lg">
+<span class="material-symbols-outlined">login</span>
+                            Admin Login
+                        </button>
+<button class="border border-white/40 text-white px-8 py-3 rounded font-label-md text-label-md font-bold hover:bg-white/10 transition-all">
+                            View Demo
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-background">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4 bg-surface border border-outline-variant p-8 rounded-xl flex flex-col gap-4">
+<div class="w-12 h-12 bg-secondary-container rounded flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">dashboard</span>
+</div>
+<h3 class="font-h2 text-h2 text-primary">Intuitive Dashboard</h3>
+<p class="font-body-md text-body-md text-secondary">
+                            Get a 360-degree view of your college metrics, student enrollment, and departmental performance in a single pane.
+                        </p>
+</div>
+<div class="md:col-span-4 bg-surface border border-outline-variant p-8 rounded-xl flex flex-col gap-4">
+<div class="w-12 h-12 bg-secondary-container rounded flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">badge</span>
+</div>
+<h3 class="font-h2 text-h2 text-primary">Faculty Management</h3>
+<p class="font-body-md text-body-md text-secondary">
+                            Efficiently track employee records, course assignments, and performance evaluations with automated workflows.
+                        </p>
+</div>
+<div class="md:col-span-4 bg-surface border border-outline-variant p-8 rounded-xl flex flex-col gap-4">
+<div class="w-12 h-12 bg-secondary-container rounded flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">person_add</span>
+</div>
+<h3 class="font-h2 text-h2 text-primary">Student Admissions</h3>
+<p class="font-body-md text-body-md text-secondary">
+                            Simplify the enrollment process with digital onboarding, document verification, and automated registration tools.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-surface-container-low">
+<div class="container mx-auto px-8">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2">
+<h2 class="font-h1 text-h1 text-primary mb-6">Designed for Modern Academia</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary font-bold">Secure Access</h4>
+<p class="font-body-md text-body-md text-secondary">Enterprise-grade security protocols for all administrative data.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary font-bold">Real-time Analytics</h4>
+<p class="font-body-md text-body-md text-secondary">Instantly generate reports on student progress and financial status.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h4 class="font-label-md text-label-md text-primary font-bold">Integrated Comms</h4>
+<p class="font-body-md text-body-md text-secondary">Direct communication channels between faculty and administration.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="bg-white p-4 rounded-xl border border-outline-variant shadow-xl">
+<img alt="Dashboard Interface Preview" class="rounded-lg w-full h-auto" data-alt="A clean and professional software dashboard displayed on a high-end laptop screen. The interface features a navy blue sidebar, minimalist white data cards, and crisp slate-colored typography. Various charts and graphs showing student enrollment trends are visible, rendered in a sophisticated palette of blues and teals. The setting is a bright, modern office with soft natural lighting and a shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBplMttiBpQBFdeMPCJnC_r_LX8MWctz3iZzI7tm_6CQfhdJMxM9XQrHvG_LfjMYmBBR0bQHWF8HceUfktQlRWNhpZ-0F9VYs4I5yaq7tyZuRv24U0PUZQGGC_V4U_mt5bLEfuNkvSCc5CQcT8wQjMp2I7M05MrvYX-JBhE5O54yKTQa7bVj89EtmTFhLcQnEHrY6hk9IAMA57DcSWyz5Ab8PBG-2w2SziV3tWcLDmkIUmylz9VONkJvfylI2gQIUxrKwBd1yS43HcG"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-primary-container text-on-primary p-6 rounded-xl hidden md:block">
+<p class="font-h1 text-h1">99.9%</p>
+<p class="font-caption text-caption uppercase tracking-wider opacity-70">System Uptime</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-surface border-t border-outline-variant py-12 px-8">
+<div class="container mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">school</span>
+<span class="font-h3 text-h3 font-semibold text-primary">EduManage</span>
+</div>
+<div class="flex flex-wrap gap-8">
+<a class="font-label-md text-label-md text-secondary hover:text-primary" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary" href="#">Admin Guide</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary" href="#">Contact</a>
+</div>
+<p class="font-caption text-caption text-secondary">
+                    © 2024 EduManage Systems. All rights reserved.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
