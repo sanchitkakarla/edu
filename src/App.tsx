@@ -5,6 +5,7 @@ import LoginPage from './pages/LoginPage'
 import DashboardPage from './pages/DashboardPage'
 import AddStudentPage from './pages/AddStudentPage'
 import AddEmployeePage from './pages/AddEmployeePage'
+import EmployeesMirrorPage from './pages/EmployeesMirrorPage'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/add-student" element={<AddStudentPage />} />
           <Route path="/add-employee" element={<AddEmployeePage />} />
+          <Route path="/employees-mirror" element={<EmployeesMirrorPage />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

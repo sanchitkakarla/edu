@@ -4,6 +4,7 @@ const navItems = [
   { to: '/dashboard', icon: 'dashboard', label: 'Dashboard' },
   { to: '/add-student', icon: 'person_add', label: 'Add Student' },
   { to: '/add-employee', icon: 'badge', label: 'Add Employee' },
+  { to: '/employees-mirror', icon: 'hub', label: 'Employees Mirror' },
 ]
 
 export default function Sidebar() {
